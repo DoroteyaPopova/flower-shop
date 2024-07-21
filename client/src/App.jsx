@@ -1,14 +1,17 @@
 import Body from "./components/Body"
 import Button from "./components/Button"
 import Header from "./components/Header"
+import Navigation from "./components/navigation/Navigation"
 
 function App() {
 
   return (
     <>
-      <Header />
+      {/* <Header /> */}
 
-      <Button/>
+      <Navigation />
+
+      <Button />
 
       <Body />
     </>
