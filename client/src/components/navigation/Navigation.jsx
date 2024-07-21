@@ -6,14 +6,14 @@ import styles from "./Navigations.module.css"
 
 function Navigation() {
   return (
-    <Navbar className={`row ${styles.navMain}`} fixed='top'>
+    <Navbar className={`${styles.navMain}`} fixed='top'>
       <Container>
         <Navbar.Brand href="#home">Home</Navbar.Brand>
-        <Nav.Link href="#home">Flowers</Nav.Link>
-        <Nav.Link href="#link">Something</Nav.Link>
+        <Nav.Link href="#home" className='text-muted'>Flowers</Nav.Link>
+        <Nav.Link href="#link" className='text-muted'>Something</Nav.Link>
         <Navbar.Collapse className="justify-content-end">
-          <Navbar.Text className={`row ${styles.loggedUser}`}>
-            Signed in as: <a href="#login">Mark Otto</a>
+          <Navbar.Text className={`${styles.signedIn}`}>
+            Signed in as: <a href="#login" className={`${styles.user}`}>Mark Otto</a>
           </Navbar.Text>
         </Navbar.Collapse>
       </Container>

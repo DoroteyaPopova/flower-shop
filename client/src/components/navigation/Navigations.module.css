@@ -1,7 +1,19 @@
 .navMain {
-    background-color: #99bbdb;
+    background-color: rgba(153,	187,	219, 0.8);
 }
 
-.loggedUser {
+.navMain:hover {
+    opacity: rgba(153,	187,	219, 1);
+}
+
+.flower {
+    -moz-text-decoration-color: black;
+}
+
+.signedIn {
     display: flex;
+}
+
+.user {
+    padding-left: 7px;
 }
