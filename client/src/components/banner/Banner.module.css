@@ -1,0 +1,22 @@
+.logo::before {
+    display: inline-block;
+    content: "";
+    vertical-align: -.125em;
+    background-image: url(`../../../../../img/icon-flower.jpg);
+    background-repeat: no-repeat;
+    background-size: 1rem 1rem;
+    position: absolute;
+    background-color: rgba(122, 190, 235, 0.527);
+}
+
+.right {
+    background-color: #2697cc;
+    padding: 10px;
+    opacity: 0.6;
+    float: right;
+    position: fixed;
+}
+
+p {
+    color: black;
+}
