@@ -1,17 +1,20 @@
 .navMain {
-    background-color: rgba(153,	187,	219, 0.8);
+    background-color: rgba(153, 187, 219, 0.8);
 }
 
 .navMain:hover {
-    opacity: rgba(153,	187,	219, 1);
+    opacity: rgba(153, 187, 219, 1);
 }
 
-.flower {
-    -moz-text-decoration-color: black;
+.muted {
+    position: initial;
+    right: 0;
+    left: 200;
+    z-index: 1030;
+    margin-inline-end: auto;
 }
 
 .signedIn {
-    display: flex;
 }
 
 .user {
