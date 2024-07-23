@@ -12,10 +12,9 @@ export default function Banner() {
                             The Silver Flower
                         </div> */}
                         <div className={styles.left}>
-                            <img src="../../../img/icon-flower.jpg" alt="Flower" />
+                            <img src="../../../img/trans2.png" alt="Flower" />
                             <p>The Silver Flower</p>
                         </div>
-                        {/* <div className="bg-blue-transparent simple"><p>Your most trusted flower shop!</p></div> */}
                         <div className={styles.right}>
                             <p>
                                 Your most trusted flower shop!
