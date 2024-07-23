@@ -1,10 +1,9 @@
 import styles from "./Banner.module.css";
-import Card from 'react-bootstrap/Card';
 
 export default function Banner() {
     return (
         <>
-            <div className="banner-section section parallax-window" data-parallax="scroll" data-image-src="img/section-1-bg.jpg" id="section-1">
+            <div className="banner-section section parallax-window" data-parallax="scroll" data-image-src="/img/bg-flower.jpg" id="section-1">
                 <div className="container">
                     <div className="item">
                         {/* <div className="bg-blue-transparent logo-fa">
