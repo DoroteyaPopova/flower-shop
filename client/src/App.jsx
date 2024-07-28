@@ -1,26 +1,19 @@
-import Navigation from "./components/navigation/Navigation"
-import Banner from "./components/banner/Banner"
-import Info from "./components/info/Info"
-import Catalog from "./components/catalog/Catalog"
-import Footer from "./components/footer/Footer"
-import Button from "./components/Button"
+import { Routes, Route } from "react-router-dom";
+import Home from "./components/home/Home"
 
 function App() {
 
   return (
     <>
 
-      <Navigation />
-
-      <Banner/>
-
-      <Info/>
-
-      <Catalog/>
-
-      <Footer/>
-
-      <Button />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        {/* <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/logour" element={<Logout />} />
+        <Route path="/games" element={<GameList />} />
+        <Route path="/games/create" element={<GameCrete />} /> */}
+      </Routes>
     </>
   )
 }
