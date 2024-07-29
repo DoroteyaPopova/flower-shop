@@ -1,7 +1,7 @@
 export default function Info() {
     return (
         <>
-            <section className="work-section section" id="section-2">
+            <section className="work-section section" id="section-2" data-scroll-index='1'>
                 <div className="container">
                     <div className="row">
                         <div className="item col-md-4">

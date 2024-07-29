@@ -1,7 +1,7 @@
 export default function Catalog() {
     return (
         <>
-            <section className="gallery-section section parallax-window" data-parallax="scroll" data-image-src="img/section-3-bg.jpg" id="section-3">
+            <section className="gallery-section section parallax-window" data-parallax="scroll" data-image-src="img/section-3-bg.jpg" id="section-3" data-scroll-index='2'>
                 <div className="container">
                     <div className="title text-right">
                         <h2>Our Gallery</h2>

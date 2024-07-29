@@ -1,7 +1,7 @@
 export default function Footer() {
     return (
         <>
-            <section className="contact-section section" id="section-4">
+            <section className="contact-section section" id="section-4" data-scroll-index='3'>
                 <div className="container">
                     <div className="title">
                         <h3>Contact Us</h3>

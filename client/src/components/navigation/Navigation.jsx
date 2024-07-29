@@ -8,33 +8,14 @@ import Info from "../info/Info";
 
 
 function Navigation() {
-  
+
   return (
     <Navbar className={styles.navMain} fixed='top'>
       <Container>
-        <Navbar.Brand href="/"
-          onClick={(e) => [window.scroll(0, 0), e.preventDefault(), ]}
-        >Home</Navbar.Brand>
+        <Navbar.Brand href="/" data-scroll-goto="0">Home</Navbar.Brand>
         <Navbar className={styles.muted}>
-          <Nav.Link 
-            onClick={() => {
-              const element = document.getElementById('section-3');
-              element?.scrollIntoView({
-                behavior: `smooth`
-              });
-            }}
-            className='text-muted'
-          >Flowers</Nav.Link>
-          <Nav.Link
-            href="#home"
-            onClick={() => {
-              const element = document.getElementById('section-4');
-              element?.scrollIntoView({
-                behavior: 'smooth'
-              });
-            }}
-            className='text-muted'
-          >AboutUs</Nav.Link>
+          <Nav.Link className='text-muted' data-scroll-goto="2">Flowers</Nav.Link>
+          <Nav.Link href="#home" className='text-muted' data-scroll-goto="3">About Us</Nav.Link>
           <Nav.Link href="#home" className='text-muted'>Register</Nav.Link>
           <Nav.Link href="#home" className='text-muted'>Login</Nav.Link>
 
