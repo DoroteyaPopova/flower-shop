@@ -1,4 +1,4 @@
-import { login, logout } from "../api/auth-api";
+import { login, logout } from "../components/api/auth-api";
 import { AuthContext, useAuthContext } from "../context/AuthContext";
 
 export const useLogin = () => {

@@ -1,14 +1,11 @@
-import { Routes, Route, ScrollRestoration } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 
 import Home from "./components/home/Home"
-import Footer from "./components/footer/Footer";
 import Navigation from "./components/navigation/Navigation";
-import Banner from "./components/banner/Banner";
-import Info from "./components/info/Info";
-import Catalog from "./components/catalog/Catalog";
-import Button from "./components/Button";
 import ScrollToPlace from "./components/ScrollToPlace";
+import Register from "./components/register/Register";
+import CreateFlower from "./components/create-flower/CreateFlower";
 
 function App() {
 
@@ -17,12 +14,12 @@ function App() {
       <ScrollToPlace />
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/" element={<Navigation />} />
-        <Route path="/" element={<Banner />} />
-        <Route path="/" element={<Info />} />
-        <Route path="/" element={<Catalog />} />
-        <Route path="/" element={<Footer />} /> */}
-        {/* <Route path="/games/create" element={<Button />} /> */}
+
+        <Route path="/" element={<Navigation />} />
+
+        <Route path="/register" element={<Register />} />
+
+        <Route path="/create-flower" element={<CreateFlower />} />
       </Routes>
     </>
   )
