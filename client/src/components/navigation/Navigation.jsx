@@ -15,8 +15,8 @@ function Navigation() {
         <Navbar className={styles.muted}>
           <Nav.Link className='text-muted' data-scroll-goto="2">Flowers</Nav.Link>
           <Nav.Link href="#home" className='text-muted' data-scroll-goto="3">About Us</Nav.Link>
-          <Nav.Link href="#home" className='text-muted'>Register</Nav.Link>
-          <Nav.Link href="#home" className='text-muted'>Login</Nav.Link>
+          <Nav.Link href="/register" className='text-muted'>Register</Nav.Link>
+          <Nav.Link href="/login" className='text-muted'>Login</Nav.Link>
 
           {/* Loged in */}
           {/* <Nav.Link href="#link" className='text-muted' data-scroll-goto="1">Add Product</Nav.Link>
