@@ -14,13 +14,13 @@ function Navigation() {
         <Navbar.Brand href="/" data-scroll-goto="0">Home</Navbar.Brand>
         <Navbar className={styles.muted}>
           <Nav.Link className='text-muted' data-scroll-goto="2">Flowers</Nav.Link>
-          <Nav.Link href="#home" className='text-muted' data-scroll-goto="3">About Us</Nav.Link>
+          <Nav.Link href="#home" className='text-muted' data-scroll-goto="4">About Us</Nav.Link>
           <Nav.Link href="/register" className='text-muted'>Register</Nav.Link>
           <Nav.Link href="/login" className='text-muted'>Login</Nav.Link>
 
           {/* Loged in */}
-          {/* <Nav.Link href="#link" className='text-muted' data-scroll-goto="1">Add Product</Nav.Link>
-          <Nav.Link href="#link" className='text-muted'>Logout</Nav.Link> */}
+          <Nav.Link href="/create-flower" className='text-muted' data-scroll-goto="3">Add Flower</Nav.Link>
+          {/* <Nav.Link href="#link" className='text-muted'>Logout</Nav.Link> */}
         </Navbar>
         <Navbar className="justify-content-end">
           <Navbar.Text className={styles.signedIn}>
