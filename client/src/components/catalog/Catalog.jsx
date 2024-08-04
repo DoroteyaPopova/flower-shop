@@ -1,4 +1,13 @@
+import { useEffect, useState } from "react"
+import flowerAPI from "../api/flower-api";
+
 export default function Catalog() {
+    const [flowers, setFlowers] = useState([]);
+
+    useEffect(() => {
+        flowerAPI.getAll()
+            .then(result => setFlowers(result));
+    }, []);
     return (
         <>
             <section className="gallery-section section parallax-window" data-parallax="scroll" data-image-src="img/section-3-bg.jpg" id="section-3" data-scroll-index='2'>
