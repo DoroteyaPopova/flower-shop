@@ -9,7 +9,7 @@ import CreateFlower from "../create-flower/CreateFlower"
 export default function Home() {
     return (
         <>
-            <Navigation />
+            {/* <Navigation /> */}
 
             <Banner />
 

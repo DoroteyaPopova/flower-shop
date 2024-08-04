@@ -11,11 +11,13 @@ function App() {
 
   return (
     <>
+
       <ScrollToPlace />
+
+      <Navigation />
+
       <Routes>
         <Route path="/" element={<Home />} />
-
-        <Route path="/" element={<Navigation />} />
 
         <Route path="/register" element={<Register />} />
 

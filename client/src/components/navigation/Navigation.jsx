@@ -1,6 +1,9 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+
+import { Link } from 'react-router-dom';
+
 import styles from "./Navigations.module.css"
 
 import Info from "../info/Info";
@@ -24,7 +27,7 @@ function Navigation() {
         </Navbar>
         <Navbar className="justify-content-end">
           <Navbar.Text className={styles.signedIn}>
-            Signed in as: <a href="#login" className={`${styles.user}`}>Mark Otto</a>
+            Signed in as: <Link to="#login" className={`${styles.user}`}>Mark Otto</Link>
           </Navbar.Text>
         </Navbar>
       </Container>
