@@ -1,0 +1,90 @@
+{
+    "a82b0475-b2bf-457f-83d5-7b69a9908e52": {
+        "name": "Red Rose",
+        "difficulty": "easy",
+        "placement": "outdoor",
+        "description": "A lovely red rose!",
+        "img": "https://cms.interiorcompany.com/wp-content/uploads/2024/01/lincoln-red-rose-bush-types.jpg",
+        "_id": "a82b0475-b2bf-457f-83d5-7b69a9908e52"
+    },
+    "b85d59d0-c4f8-465b-b57e-8195dd60c39b": {
+        "name": "Spider Lily",
+        "difficulty": "hard",
+        "placement": "outdoor",
+        "img": "https://www.easytogrowbulbs.com/cdn/shop/products/Lycoris_Red_Radiata.SHUT.jpg?v=1571439604&width=1946",
+        "description": "Japanese flower of death.",
+        "_id": "b85d59d0-c4f8-465b-b57e-8195dd60c39b"
+    },
+    "586389e2-2c3e-4653-957a-67e1b0ca44f5": {
+        "name": "Sunflower",
+        "difficulty": "medium",
+        "placement": "outdoor",
+        "img": "https://www.highmowingseeds.com/media/catalog/product/cache/95cbc1bb565f689da055dd93b41e1c28/7/1/7104-1.jpg",
+        "description": "Always face the sun!",
+        "_id": "586389e2-2c3e-4653-957a-67e1b0ca44f5"
+    },
+    "ead1e6ff-48be-4a66-b6de-293384b75807": {
+        "name": "Water Lily",
+        "difficulty": "easy",
+        "placement": "outdoor",
+        "img": "https://www.latour-marliac.com/3189-large_default/nymphaea-pink-sunrise-.jpg",
+        "description": "The water beauty.",
+        "_id": "ead1e6ff-48be-4a66-b6de-293384b75807"
+    },
+    "482572d2-5909-4eec-81ee-29b66e33b843": {
+        "name": "Indoor Cactus",
+        "difficulty": "easy",
+        "placement": "indoor",
+        "img": "https://www.jacksonandperkins.com/images/xl/29377.webp?v=0-1",
+        "description": "Beginner's best choice!",
+        "_id": "482572d2-5909-4eec-81ee-29b66e33b843"
+    },
+    "1fb182a3-f5c5-40ab-a19e-2376124e55d6": {
+        "name": "Outdoor Cactus",
+        "difficulty": "easy",
+        "placement": "outdoor",
+        "img": "https://desertsteel.net/cdn/shop/files/metal-saguaro-cactus-desert-background.jpg?v=1714491206&width=2000",
+        "description": "Beginner's best choice!",
+        "_id": "1fb182a3-f5c5-40ab-a19e-2376124e55d6"
+    },
+    "3bdfdbfc-79e1-4216-82d7-dcd763a77806": {
+        "name": "Bromeliad",
+        "difficulty": "easy",
+        "placement": "indoor",
+        "img": "https://cms.interiorcompany.com/wp-content/uploads/2024/01/bromeliad-flower-plants-for-home.jpg",
+        "description": "Colorful spikes!",
+        "_id": "3bdfdbfc-79e1-4216-82d7-dcd763a77806"
+    },
+    "fe625a77-51c4-4e5a-a0b4-0ae5e4f2e93e": {
+        "name": "Kalanchoe",
+        "difficulty": "easy",
+        "placement": "indoor",
+        "img": "https://cms.interiorcompany.com/wp-content/uploads/2024/01/kalanchoe-best-flower-plants-for-home.jpg",
+        "description": "Tree-like flower.",
+        "_id": "fe625a77-51c4-4e5a-a0b4-0ae5e4f2e93e"
+    },
+    "e9f6df6b-132e-4572-876f-de694c51ebda": {
+        "name": "Orchid",
+        "difficulty": "hard",
+        "placement": "indoor",
+        "img": "https://cms.interiorcompany.com/wp-content/uploads/2024/01/orchid-indoor-blooming-plants.jpg",
+        "description": "Loved by most!",
+        "_id": "e9f6df6b-132e-4572-876f-de694c51ebda"
+    },
+    "c396febf-8b55-4d2d-8825-69a04f96ae79": {
+        "name": "Crown of Thorns",
+        "difficulty": "medium",
+        "placement": "indoor",
+        "img": "https://cms.interiorcompany.com/wp-content/uploads/2024/01/crown-of-thorns-flower-plants-for-home.jpg",
+        "description": "Best type of crown!",
+        "_id": "c396febf-8b55-4d2d-8825-69a04f96ae79"
+    },
+    "b3681313-d118-49ac-b31b-878c18152e71": {
+        "name": "Peace Lily",
+        "difficulty": "medium",
+        "placement": "indoor",
+        "img": "https://cms.interiorcompany.com/wp-content/uploads/2024/01/peace-lily-flower-plants-for-home.jpg",
+        "description": "White is the best color.",
+        "_id": "b3681313-d118-49ac-b31b-878c18152e71"
+    }
+}
