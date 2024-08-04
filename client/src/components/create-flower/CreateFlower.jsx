@@ -3,22 +3,22 @@ import style from "./CreateFlower.module.css"
 export default function CreateFlower() {
     return (
         <>
-            <form id="form" action="/submit" method="post" data-scroll-index="3">
+            <form id="form" action="/submit" method="post" className={style.cform} data-scroll-index="3">
                 <div className={style.container}>
 
-                    <span className={style.spaan}>
-                        <h1>Add your flower</h1>
-                        <label>Name:</label>
-                        <input type="text" id="name" name="name" placeholder="Red Rose..." />
+                    <span className={style.cspan}>
+                        <h1 className={style.hMain}>Add your flower</h1>
+                        <label className={style.clabel}>Name:</label>
+                        <input className={style.cinput} type="text" id="name" name="name" placeholder="Red Rose..." />
 
-                        <label>Difficulty:</label>
-                        <input type="text" id="difficulty" name="difficulty" placeholder="Hard..." />
+                        <label className={style.clabel}>Difficulty:</label>
+                        <input className={style.cinput} type="text" id="difficulty" name="difficulty" placeholder="Hard..." />
 
-                        <label>Place</label>
-                        <input type="text" id="place" name="place" placeholder="Indoor/Outdoor" />
+                        <label className={style.clabel}>Place</label>
+                        <input className={style.cinput} type="text" id="place" name="place" placeholder="Indoor/Outdoor" />
 
-                        <label>Description</label>
-                        <input type="text" id="description" name="description" placeholder="Lovely red rose...." />
+                        <label className={style.clabel}>Description</label>
+                        <input className={style.cinput} type="text" id="description" name="description" placeholder="Lovely red rose...." />
                     </span>
                 </div>
             </form>
