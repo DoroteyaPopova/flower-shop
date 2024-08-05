@@ -10,6 +10,15 @@ export const getAll = async () => {
     return flowers;
 }
 
+export const getFirstFive = async () => {
+    const result = await request.get(BASE_URL);
+
+    const flowers = Object.values(result);
+
+    const fiveFlowers = flowers.slice(0, 5)
+    
+    return fiveFlowers;
+}
 // export const getOne = (flowerId) => request.get(`${BASE_URL}/${flowerId}`);
 
 // export const create = (flowerData) => request.post(`${BASE_URL}`, flowerData)
