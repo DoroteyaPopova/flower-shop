@@ -16,18 +16,19 @@ export const getFirstFive = async () => {
     const flowers = Object.values(result);
 
     const fiveFlowers = flowers.slice(0, 5)
-    
+
     return fiveFlowers;
 }
-// export const getOne = (flowerId) => request.get(`${BASE_URL}/${flowerId}`);
+export const getOne = (flowerId) => request.get(`${BASE_URL}/${flowerId}`);
 
-// export const create = (flowerData) => request.post(`${BASE_URL}`, flowerData)
+export const create = (flowerData) => request.post(`${BASE_URL}`, flowerData)
 
 
-// const flowerAPI = {
-//     getAll,
-//     getOne,
-//     create,
-// }
+const flowerAPI = {
+    getAll,
+    getFirstFive,
+    getOne,
+    create,
+}
 
-// export default flowerAPI;
+export default flowerAPI;
