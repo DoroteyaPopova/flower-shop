@@ -5,15 +5,20 @@ export default function FlowerListItem({
 }) {
     return (
         <>
-                <figure className="effect-julia item">
-                    <img src={img} alt="Image" />
-                    <figcaption>
-                        <div>
-                            <p>{name}</p>
-                        </div>
-                        <a href="#">View more</a>
-                    </figcaption>
-                </figure>
+        
+            <figure className="effect-julia item">
+                <img src={img} alt="Image" />
+                <figcaption>
+                    <div>
+                        <p>{name}</p>
+                    </div>
+                    <a href="#"></a>
+                </figcaption>
+            </figure>
+
+            {/* <img src={img} alt={name} />
+            <p>{name}</p>
+            <a href="#">Info</a> */}
         </>
     )
 }

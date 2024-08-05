@@ -1,9 +1,32 @@
-.container{
-    position: absolute;
-	border-radius: 3px;
-    padding: 20px;
-	display: table;
-		
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    grid-gap: 10px;
+/* .galery {
+    display: inline-block;
+    margin: 5px;
+    margin-top: 2500px;
+    width: 200px;
 }
+
+.galery p {
+    padding: 10px;
+    text-align: center;
+}
+
+.galery img {
+    transition: 0.5s;
+    width: 100%;
+    height: auto;
+}
+
+.galery img:hover {
+    transform: scale(1.1);
+}
+
+.sections {
+    position: sticky;
+    background-image: url("../../../img/section-3-bg.jpg");
+}
+
+.firstDiv {
+    position: sticky;
+    margin-left: 300px;
+    margin-right: 300px;
+} */
