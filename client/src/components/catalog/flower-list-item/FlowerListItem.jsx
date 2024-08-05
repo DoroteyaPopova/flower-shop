@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 export default function FlowerListItem({
     _id,
     name,
@@ -5,14 +7,14 @@ export default function FlowerListItem({
 }) {
     return (
         <>
-        
+
             <figure className="effect-julia item">
                 <img src={img} alt="Image" />
                 <figcaption>
                     <div>
                         <p>{name}</p>
                     </div>
-                    <a href="#"></a>
+                    <Link to={`/flowers/${_id}/details`}></Link>
                 </figcaption>
             </figure>
 
