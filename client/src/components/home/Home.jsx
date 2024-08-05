@@ -1,4 +1,3 @@
-import Navigation from "../navigation/Navigation"
 import Banner from "../banner/Banner"
 import Info from "../info/Info"
 import Catalog from "../catalog/Catalog"
@@ -9,7 +8,6 @@ import CreateFlower from "../create-flower/CreateFlower"
 export default function Home() {
     return (
         <>
-            {/* <Navigation /> */}
 
             <Banner />
 
