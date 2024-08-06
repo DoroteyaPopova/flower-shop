@@ -18,14 +18,14 @@ export default function LoginNew() {
                                 <input type="text" required placeholder="Image Link" />
                             </div>
 
-                            <label for="difficulty">Difficulty
+                            <label htmlFor="difficulty">Difficulty
                                 <select name="difficulty" id="difficulty">
                                     <option value="easy">Easy</option>
                                     <option value="medium">Medium</option>
                                     <option value="hard">Hard</option>
                                 </select>
                             </label>
-                            <label for="placement">Indoor/Outdoor
+                            <label htmlFor="placement">Indoor/Outdoor
                                 <select name="placement" id="placement">
                                     <option value="indoor">Indoor</option>
                                     <option value="outdoor">Outdoor</option>
