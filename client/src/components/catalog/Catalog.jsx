@@ -39,7 +39,7 @@ export default function Catalog() {
                     <div className="mx-auto gallery-slider">
 
                         {/* {flowers.length > 0 */}
-                            // ?
+
                         {flowers.map(flower => <FlowerListItem key={flower._id} {...flower} />)}
                         {/* // : <p>No flowers yet</p> */}
                         {/* // } */}
