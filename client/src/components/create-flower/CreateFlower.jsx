@@ -3,7 +3,7 @@ import style from "./CreateFlower.module.css"
 export default function CreateFlower() {
     return (
         <>
-            <form id="form" action="/submit" method="post" className={style.cform} data-scroll-index="3">
+            <form id="form" action="/submit" method="post" className={style.cform}>
                 <div className={style.container}>
 
                     <span className={style.cspan}>
