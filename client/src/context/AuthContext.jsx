@@ -1,45 +1,45 @@
-import { createContext, useContext, } from "react"
+// import { createContext, useContext, } from "react"
 
-import usePersistedState from "../hooks/usePersistedState";
+// import usePersistedState from "../hooks/usePersistedState";
 
 
-export const AuthContext = createContext({
-    userId: ``,
-    email: ``,
-    accessToken: ``,
-    isAuthenticated: false,
-    changeAuthState: (authState = {}) => null,
-    logout: () => null
-});
+// export const AuthContext = createContext({
+//     userId: ``,
+//     email: ``,
+//     accessToken: ``,
+//     isAuthenticated: false,
+//     changeAuthState: (authState = {}) => null,
+//     logout: () => null
+// });
 
-export function AuthContextProvider(props) {
-    const [authState, setAuthState] = usePersistedState(`auth`, {});
+// export function AuthContextProvider(props) {
+//     const [authState, setAuthState] = usePersistedState(`auth`, {});
 
-    const changeAuthState = (state) => {
-        localStorage.setItem(`accessToken`, state.accessToken);
+//     const changeAuthState = (state) => {
+//         localStorage.setItem(`accessToken`, state.accessToken);
 
-        setAuthState(state);
-    }
+//         setAuthState(state);
+//     }
 
-    const logout = () => {
-        setAuthState(null)
-    }
+//     const logout = () => {
+//         setAuthState(null)
+//     }
 
-    const contexData = {
-        userId: authState?._id,
-        email: authState.email,
-        accessToken: authState.accessToken,
-        isAuthenticated: !!authState.email,
-        changeAuthState,
-        logout,
-    }
+//     const contexData = {
+//         userId: authState?._id,
+//         email: authState.email,
+//         accessToken: authState.accessToken,
+//         isAuthenticated: !!authState.email,
+//         changeAuthState,
+//         logout,
+//     }
 
-    return (
-        <AuthContext.Provider value={contexData}>
-            {props.children}
-        </AuthContext.Provider>
-    );
-}
+//     return (
+//         <AuthContext.Provider value={contexData}>
+//             {props.children}
+//         </AuthContext.Provider>
+//     );
+// }
 
 export function useAuthContext() {
     const authData = useContext(AuthContext);

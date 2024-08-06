@@ -15,7 +15,7 @@ export default function Home() {
 
             <Catalog />
 
-            <CreateFlower />
+            {/* <CreateFlower /> */}
 
             <Footer />
 
