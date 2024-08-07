@@ -1,7 +1,36 @@
 import style from "./Register.module.css"
 import { Link } from "react-router-dom"
 
+import { useNavigate } from "react-router-dom";
+import { useRegister } from "../../hooks/useAuth"
+import { useState } from "react";
+
+const initialValues = { email: ``, password: ``, rePassword: `` };
+
 export default function RegisterNew() {
+    const [error, setError] = useState(``);
+    const register = useRegister();
+    const navigate = useNavigate();
+
+    const registerHandler = async ({ email, password, rePassword }) => {
+        if (password !== rePassword) {
+            return setError(`Password missmatch!`);
+        }
+
+        try {
+            await register(email, password);
+            navigate(`/`);
+        } catch (err) {
+            setError(err.message);
+        }
+    }
+
+    const {
+        values,
+        changeHandler,
+        submitHandler,
+    } = useForm(initialValues, registerHandler);
+
     return (
         <>
             <div className={style.whole}>
