@@ -43,6 +43,7 @@ export default function LoginNew() {
                                 <input
                                     type="email"
                                     required
+                                    name="email"
                                     value={values.email}
                                     onChange={changeHandler}
                                     placeholder="Email Address"
@@ -52,6 +53,7 @@ export default function LoginNew() {
                                 <input
                                 type="password"
                                 required
+                                name="password"
                                 value={values.password}
                                 onChange={changeHandler}
                                 placeholder="Password" />

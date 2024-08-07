@@ -45,6 +45,7 @@ export default function RegisterNew() {
                                 <input
                                     type="email"
                                     required
+                                    name="email"
                                     value={values.email}
                                     onChange={changeHandler}
                                     placeholder="Email Address" />
@@ -53,6 +54,7 @@ export default function RegisterNew() {
                                 <input
                                     type="password"
                                     required
+                                    name="password"
                                     value={values.password}
                                     onChange={changeHandler}
                                     placeholder="Password" />
@@ -60,6 +62,7 @@ export default function RegisterNew() {
                             <div className={style.field}>
                                 <input
                                     type="password"
+                                    name="rePassword"
                                     required
                                     value={values.rePassword}
                                     onChange={changeHandler}
