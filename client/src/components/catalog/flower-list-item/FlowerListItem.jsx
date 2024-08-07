@@ -14,7 +14,7 @@ export default function FlowerListItem({
                     <div>
                         <p>{name}</p>
                     </div> 
-                    <Link to={`/flowers/${_id}/details`}></Link>
+                    <Link to={`/flowers/${_id}/description`}></Link>
                 </figcaption>
             </figure>
 
