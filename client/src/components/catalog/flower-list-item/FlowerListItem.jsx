@@ -7,7 +7,6 @@ export default function FlowerListItem({
 }) {
     return (
         <>
-
             <figure className="effect-julia item">
                 <img src={img} alt="Image" />
                 <figcaption>

@@ -12,7 +12,7 @@ async function requester(method, url, data) {
         }
     }
 
-    if (method !== `GET`) {
+    if (method !== "GET") {
         options.method = method;
     }
 
@@ -38,7 +38,14 @@ async function requester(method, url, data) {
     return result;
 }
 
-export const get = requester.bind(null, `GET`);
-export const post = requester.bind(null, `POST`);
-export const put = requester.bind(null, `PUT`);
-export const del = requester.bind(null, `DELETE`);
+export const get = requester.bind(null, "GET");
+export const post = requester.bind(null, "POST");
+export const put = requester.bind(null, "PUT");
+export const del = requester.bind(null, "DELETE");
+
+export default {
+    get,
+    post,
+    put,
+    del,
+};

@@ -1,18 +1,9 @@
-import { useEffect, useState } from "react"
-
-import style from "./Catalog.module.css";
-
-import * as flowerAPI from "../api/flower-api";
-
+import { useGetAllflowers } from "../../hooks/useFlowers";
 import FlowerListItem from "./flower-list-item/FlowerListItem";
 
 export default function Catalog() {
-    const [flowers, setFlowers] = useState([]);
+    const [flowers] = useGetAllflowers();
 
-    useEffect(() => {
-        flowerAPI.getAll()
-            .then(result => setFlowers(result));
-    }, []);
 
     // const firstFiveFlowers = flowers.slice(0, 5).map(flower => {
     //     return <myview item={i} key={i.id} />

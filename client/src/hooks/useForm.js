@@ -1,7 +1,7 @@
 import { useState } from "react"
 
-export function useForm(initialValues) {
-    const [state, setValues] = useState(initialValues);
+export function useForm(initialValues, submitCallback) {
+    const [values, setValues] = useState(initialValues);
 
     const changeHandler = (e) => {
         setValues(state => ({

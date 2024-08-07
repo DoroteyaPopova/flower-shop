@@ -1,8 +1,8 @@
 import { useParams } from "react-router-dom";
-import { useGetOneGames } from "../../hooks/useGames";
 import { useForm } from "../../hooks/useForm";
 import { useGetAllComments, usereateComment } from "../../hooks/useComments";
 import { useAuthContext } from "../../context/AuthContext";
+import { useGetOneFlowers } from "../../hooks/useFlowers";
 
 const initialValues = {
     comment: ``
@@ -11,9 +11,9 @@ const initialValues = {
 export default function FlowerDetails() {
     const { flowerId } = useParams();
     const [comments, dispatch] = useGetAllComments(flowerId);
+    const [flower] = useGetOneFlowers(flowerId);
     const createComment = usereateComment();
     const { email, userId } = useAuthContext();
-    const [game] = useGetOneGames(flowerId);
     const { isAuthenticated } = useAuthContext();
     const {
         changeHandler,
@@ -30,7 +30,7 @@ export default function FlowerDetails() {
         }
     });
 
-    const isOwner = userId === game._id;
+    const isOwner = userId === flower._id;
 
     return (
         <>
