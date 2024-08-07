@@ -4,6 +4,7 @@ import { Link } from "react-router-dom"
 import { useNavigate } from "react-router-dom";
 import { useRegister } from "../../hooks/useAuth"
 import { useState } from "react";
+import { useForm } from "../../hooks/useForm";
 
 const initialValues = { email: ``, password: ``, rePassword: `` };
 
@@ -39,15 +40,30 @@ export default function RegisterNew() {
                         <div className={style.title}>
                             Register Form
                         </div>
-                        <form action="#" className={style.lForm}>
+                        <form onSubmit={submitHandler} className={style.lForm}>
                             <div className={style.field}>
-                                <input type="text" required placeholder="Email Address" />
+                                <input
+                                    type="email"
+                                    required
+                                    value={values.email}
+                                    onChange={changeHandler}
+                                    placeholder="Email Address" />
                             </div>
                             <div className={style.field}>
-                                <input type="password" required placeholder="Password" />
+                                <input
+                                    type="password"
+                                    required
+                                    value={values.password}
+                                    onChange={changeHandler}
+                                    placeholder="Password" />
                             </div>
                             <div className={style.field}>
-                                <input type="password" required placeholder="Confirm Password" />
+                                <input
+                                    type="password"
+                                    required
+                                    value={values.rePassword}
+                                    onChange={changeHandler}
+                                    placeholder="Confirm Password" />
                             </div>
                             <div className={style.field}>
                                 <input type="submit" value="Register" />
