@@ -7,3 +7,5 @@ export const login = (email, password) => requester.post(`${BASE_URL}/login`, { 
 export const register = (email, password) => requester.post(`${BASE_URL}/register`, { email, password });
 
 export const logout = () => requester.length(`${BASE_URL}/logout`);
+
+export const getOneUser = (userID) => requester.get(`${BASE_URL}/${userID}`);

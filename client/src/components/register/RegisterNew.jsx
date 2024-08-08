@@ -23,6 +23,8 @@ export default function RegisterNew() {
             navigate(`/`);
         } catch (err) {
             setError(err.message);
+            console.log(err);
+            
         }
     }
 
@@ -66,10 +68,16 @@ export default function RegisterNew() {
                                     required
                                     value={values.rePassword}
                                     onChange={changeHandler}
-                                    placeholder="Confirm Password" />
+                                    placeholder="Confirm Password"
+                                />
+                                {error && (
+                                    <p>
+                                        <span>{error}</span>
+                                    </p>
+                                )}
                             </div>
                             <div className={style.field}>
-                                <input type="submit" value="Register" />
+                                <input type="submit" value="register" />
                             </div>
                             <div className={style.signupLink}>
                                 Already have an account? <Link to="/login">Login Now</Link>
