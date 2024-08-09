@@ -8,7 +8,7 @@ async function requester(method, url, data) {
     if (accessToken) {
         options.headers = {
             ...options.headers,
-            "X-authorization": "accessToken",
+            "X-Authorization": accessToken,
         }
     }
 
